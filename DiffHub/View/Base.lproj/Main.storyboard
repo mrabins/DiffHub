@@ -29,7 +29,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="125" id="9jH-FP-IJP">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="125" id="9jH-FP-IJP" customClass="PullCell" customModule="DiffHub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9jH-FP-IJP" id="a58-AF-HZO">
@@ -46,9 +46,8 @@
                                                                 <constraint firstAttribute="height" constant="75" id="eVw-iv-trm"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RC-6T-Xo4">
-                                                            <rect key="frame" x="8" y="86" width="75" height="25"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RC-6T-Xo4">
+                                                            <rect key="frame" x="8" y="87" width="75" height="25"/>
                                                             <fontDescription key="fontDescription" name="Hack-Regular" family="Hack" pointSize="10"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -62,13 +61,28 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPJ-tZ-WIG">
+                                                            <rect key="frame" x="104" y="41" width="247" height="70"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <string key="text">This adds basic tvOS framework support via Carthage. Note that I also unified the two identical files `MagicalRecordTests-iOS-Info.plist` and `MagicalRecordTests-OSX-Info.plist`</string>
+                                                            <fontDescription key="fontDescription" name="Hack-Regular" family="Hack" pointSize="10"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="rSB-mO-J2K" firstAttribute="leading" secondItem="Sku-VV-aEf" secondAttribute="leading" constant="8" id="17E-J8-HWx"/>
                                                         <constraint firstAttribute="trailing" secondItem="Gg6-3T-Kqe" secondAttribute="trailing" constant="8" id="4qb-j1-SzY"/>
+                                                        <constraint firstItem="fPJ-tZ-WIG" firstAttribute="leading" secondItem="Sku-VV-aEf" secondAttribute="leading" constant="104" id="68V-Ak-uj7"/>
+                                                        <constraint firstAttribute="bottom" secondItem="2RC-6T-Xo4" secondAttribute="bottom" constant="4" id="AUu-Zy-HjW"/>
+                                                        <constraint firstItem="2RC-6T-Xo4" firstAttribute="leading" secondItem="Sku-VV-aEf" secondAttribute="leading" constant="8" id="Aop-jJ-UeB"/>
                                                         <constraint firstItem="Gg6-3T-Kqe" firstAttribute="leading" secondItem="rSB-mO-J2K" secondAttribute="trailing" constant="21" id="MFp-IS-J2c"/>
                                                         <constraint firstItem="Gg6-3T-Kqe" firstAttribute="top" secondItem="Sku-VV-aEf" secondAttribute="top" constant="8" id="QiQ-xN-joF"/>
+                                                        <constraint firstItem="2RC-6T-Xo4" firstAttribute="top" secondItem="rSB-mO-J2K" secondAttribute="bottom" constant="4" id="VaM-Tx-Hg8"/>
+                                                        <constraint firstAttribute="trailing" secondItem="fPJ-tZ-WIG" secondAttribute="trailing" constant="8" id="dLa-ws-7nR"/>
+                                                        <constraint firstItem="fPJ-tZ-WIG" firstAttribute="leading" secondItem="2RC-6T-Xo4" secondAttribute="trailing" constant="21" id="sfh-I9-4bo"/>
+                                                        <constraint firstItem="fPJ-tZ-WIG" firstAttribute="top" secondItem="Gg6-3T-Kqe" secondAttribute="bottom" constant="8" id="spY-Kl-Sfz"/>
+                                                        <constraint firstAttribute="bottom" secondItem="fPJ-tZ-WIG" secondAttribute="bottom" constant="5.5" id="y3a-yL-iqk"/>
                                                         <constraint firstItem="rSB-mO-J2K" firstAttribute="top" secondItem="Sku-VV-aEf" secondAttribute="top" constant="8" id="zap-ht-6Qg"/>
                                                     </constraints>
                                                 </view>
@@ -81,6 +95,12 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.17177799344062805" green="0.19579684734344482" blue="0.21665343642234802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="authorLabel" destination="2RC-6T-Xo4" id="puy-7i-676"/>
+                                            <outlet property="avatarImageView" destination="rSB-mO-J2K" id="l4v-9o-g1D"/>
+                                            <outlet property="pullDetailsLabel" destination="fPJ-tZ-WIG" id="9Gg-SM-org"/>
+                                            <outlet property="pullTitleLabel" destination="Gg6-3T-Kqe" id="9XR-GS-LoJ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
