@@ -8,21 +8,20 @@
 
 import Foundation
 
-struct Pull: Codable {
+struct Pull {
     var avatarImage: String?
     var author: String?
     var pullTitle: String?
-    var pullDetails: String?
-    var id: Int?
     var diffUrl: String?
-    
-    
-    init(avatarImage: String, author: String, pullTitle: String, pullDetails: String, id: Int, diffUrl: String) {
+
+    init(avatarImage: String, author: String, pullTitle: String, diffUrl: String) {
         self.avatarImage = avatarImage
         self.author = author
         self.pullTitle = pullTitle
-        self.pullDetails = pullDetails
-        self.id = id
         self.diffUrl = diffUrl
     }
 }
+
+
+
+

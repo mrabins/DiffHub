@@ -16,6 +16,7 @@
 		133C12381F7AEADB00A76BF5 /* Pull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C12371F7AEADB00A76BF5 /* Pull.swift */; };
 		133C123D1F7AED5400A76BF5 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C123C1F7AED5400A76BF5 /* APIHandler.swift */; };
 		133C123F1F7AEE0000A76BF5 /* RequestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C123E1F7AEE0000A76BF5 /* RequestConstants.swift */; };
+		13706C141F7D7CAE00C9BD75 /* ImageView+APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13706C131F7D7CAE00C9BD75 /* ImageView+APIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		133C12371F7AEADB00A76BF5 /* Pull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pull.swift; sourceTree = "<group>"; };
 		133C123C1F7AED5400A76BF5 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		133C123E1F7AEE0000A76BF5 /* RequestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConstants.swift; sourceTree = "<group>"; };
+		13706C131F7D7CAE00C9BD75 /* ImageView+APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+APIRequest.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +73,6 @@
 				133C122F1F79D9E400A76BF5 /* Model */,
 				133C122E1F79D9DB00A76BF5 /* View */,
 				133C122D1F79D9D000A76BF5 /* Controller */,
-				133C121B1F79D73F00A76BF5 /* AppDelegate.swift */,
 				133C12221F79D73F00A76BF5 /* Assets.xcassets */,
 				133C12271F79D73F00A76BF5 /* Info.plist */,
 			);
@@ -107,6 +108,7 @@
 		133C12301F79D9FC00A76BF5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				133C121B1F79D73F00A76BF5 /* AppDelegate.swift */,
 				133C12321F79DE1200A76BF5 /* Hack-Bold.ttf */,
 				133C12311F79DE1200A76BF5 /* Hack-BoldItalic.ttf */,
 				133C12331F79DE1300A76BF5 /* Hack-Italic.ttf */,
@@ -120,6 +122,7 @@
 			children = (
 				133C123C1F7AED5400A76BF5 /* APIHandler.swift */,
 				133C123E1F7AEE0000A76BF5 /* RequestConstants.swift */,
+				13706C131F7D7CAE00C9BD75 /* ImageView+APIRequest.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				133C121C1F79D73F00A76BF5 /* AppDelegate.swift in Sources */,
 				133C12361F7AE91300A76BF5 /* PullCell.swift in Sources */,
 				133C123F1F7AEE0000A76BF5 /* RequestConstants.swift in Sources */,
+				13706C141F7D7CAE00C9BD75 /* ImageView+APIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

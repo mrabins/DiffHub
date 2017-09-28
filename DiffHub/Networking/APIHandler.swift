@@ -22,31 +22,24 @@ class APIHandler {
                 if let response = response as? HTTPURLResponse , 200...299 ~= response.statusCode {
                     do {
                         if NSString(data:data, encoding: String.Encoding.utf8.rawValue) != nil {
-//                            var pullResult: [Pull] = []
+                            var pullResult = [Pull]()
                             
                             let object = try JSONSerialization.jsonObject(with: data, options: [])
                             let rootDict = object as? [[String: AnyObject]]
                             
-                            var parsedDataObj = [String]()
-                            
                             // Parses loose items in API
                             for items in rootDict! {
                                 let diffURL = items["diff_url"]
-                                parsedDataObj.append(diffURL as! String)
-                                
                                 let title = items["title"]
-                                parsedDataObj.append(title as! String)
-                                
+
                                 // Parses the user object
                                 let userOBJ = items["user"]
-                            
                                 let userAvatar = userOBJ!["avatar_url"]
-                                parsedDataObj.append(userAvatar as! String)
-                                
                                 let userName = userOBJ!["login"]
-                                parsedDataObj.append(userName as! String)
+                                
+                                pullResult.append(Pull(avatarImage: userAvatar as! String, author: userName as! String, pullTitle: title as! String, diffUrl: diffURL as! String))                                
                             }
-//                            success(pullResult)
+                            success(pullResult)
                         } else {
                             errorCallback("No Valid Information")
                         }
@@ -62,6 +55,4 @@ class APIHandler {
         })
         task.resume()
     }
-    
-    
 }
