@@ -34,6 +34,23 @@ class ViewController: UIViewController {
             print("An error occured \(errorMessage.debugDescription)")}
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToDiff" {
+            let vc = segue.destination as! DiffVC
+            let pull = sender as! Pull
+            vc.pull = pull
+            vc.previousOrientation = UIDevice.current.orientation.rawValue
+            let backItem = UIBarButtonItem()
+            backItem.title = "Return to Pulls"
+            navigationItem.backBarButtonItem = backItem
+            
+        }
+    }
+    
+    override func didMove(toParentViewController parent: UIViewController?) {
+        // Return to portait if that was previous state
+    }
+    
 }
 
 //MARK: TableViewDelegate & TableViewDataSource Extension
@@ -57,7 +74,12 @@ extension ViewController: UITableViewDataSource {
 }
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("I was selected")
-        // Create Segue
+        
+        let indexPath = pullTableView.indexPathForSelectedRow
+        let thePull = pulls[(indexPath?.row)!]
+        
+        performSegue(withIdentifier: "segueToDiff", sender: thePull)
+        
+        
     }
 }

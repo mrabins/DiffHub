@@ -9,8 +9,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Hack-Bold.ttf">
-            <string>Hack-Bold</string>
+        <array key="Hack-BoldItalic.ttf">
+            <string>Hack-BoldItalic</string>
         </array>
         <array key="Hack-Regular.ttf">
             <string>Hack-Regular</string>
@@ -46,19 +46,20 @@
                                                                 <constraint firstAttribute="height" constant="100" id="gVz-aF-sOI"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Title" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WRn-qh-KUC">
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Title" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRn-qh-KUC">
                                                             <rect key="frame" x="125" y="8" width="222" height="80"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="80" id="RYr-g6-TVI"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Hack-Bold" family="Hack" pointSize="20"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <fontDescription key="fontDescription" name="Hack-BoldItalic" family="Hack" pointSize="20"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RC-6T-Xo4">
-                                                            <rect key="frame" x="125" y="93" width="222" height="20"/>
+                                                            <rect key="frame" x="125" y="93" width="222" height="18.5"/>
                                                             <fontDescription key="fontDescription" name="Hack-Regular" family="Hack" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" red="0.51622346299035204" green="0.55472792727606635" blue="0.59361185584749498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -70,7 +71,7 @@
                                                         <constraint firstItem="rSB-mO-J2K" firstAttribute="top" secondItem="Sku-VV-aEf" secondAttribute="top" constant="8" id="Ray-v2-adu"/>
                                                         <constraint firstItem="WRn-qh-KUC" firstAttribute="top" secondItem="Sku-VV-aEf" secondAttribute="top" constant="8" id="Tar-aU-iDk"/>
                                                         <constraint firstItem="rSB-mO-J2K" firstAttribute="leading" secondItem="Sku-VV-aEf" secondAttribute="leading" constant="8" id="WcW-HX-4a3"/>
-                                                        <constraint firstAttribute="bottom" secondItem="2RC-6T-Xo4" secondAttribute="bottom" constant="3.5" id="Zoa-PH-NcY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="2RC-6T-Xo4" secondAttribute="bottom" constant="5" id="Zoa-PH-NcY"/>
                                                         <constraint firstItem="2RC-6T-Xo4" firstAttribute="leading" secondItem="rSB-mO-J2K" secondAttribute="trailing" constant="17" id="uiu-7c-P1P"/>
                                                         <constraint firstAttribute="trailing" secondItem="WRn-qh-KUC" secondAttribute="trailing" constant="12" id="yq6-ah-xiJ"/>
                                                     </constraints>
@@ -105,11 +106,26 @@
                     <navigationItem key="navigationItem" id="7Rx-6S-HdM"/>
                     <connections>
                         <outlet property="pullTableView" destination="fwY-Fe-p82" id="r8m-5u-dPP"/>
+                        <segue destination="bcT-Ee-t0o" kind="show" identifier="segueToDiff" id="et2-Ni-3F0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="480.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--DiffVC-->
+        <scene sceneID="7mf-31-g1c">
+            <objects>
+                <viewController id="bcT-Ee-t0o" customClass="DiffVC" customModule="DiffHub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ouV-7i-FPr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OW8-Fg-0eQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lsu-MW-4p5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="t6e-bw-igp">
