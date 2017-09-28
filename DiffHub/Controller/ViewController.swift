@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         
         pullTableView.delegate = self
         pullTableView.dataSource = self
+        navigationItem.title = "Pulls"
         
         
         APIHandler.callAPI({ pulls in
@@ -44,14 +45,13 @@ extension ViewController: UITableViewDataSource {
             let pull = pulls[indexPath.row]
             
             cell.avatarImageView.imageFromServerURL(urlString: pull.avatarImage!, defaultImage: "noAvatar")
-            cell.authorLabel.text = pull.author
-            cell.pullTitleLabel.text = pull.pullTitle
+            cell.authorLabel.text = "Authored By: \(String(describing: pull.author!))"
+            cell.pullTextView.text = pull.pullTitle
             return cell
         }
         return PullCell()
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("pulls count is \(pulls.count)")
         return pulls.count
     }
 }
@@ -60,7 +60,4 @@ extension ViewController: UITableViewDelegate {
         print("I was selected")
         // Create Segue
     }
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 175.0
-//    }
 }

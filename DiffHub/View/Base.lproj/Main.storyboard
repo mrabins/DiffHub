@@ -40,38 +40,39 @@
                                                     <rect key="frame" x="8" y="4" width="359" height="116.5"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rSB-mO-J2K">
-                                                            <rect key="frame" x="8" y="8" width="75" height="75"/>
+                                                            <rect key="frame" x="8" y="8" width="100" height="100"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="75" id="D2N-v6-uy1"/>
-                                                                <constraint firstAttribute="height" constant="75" id="eVw-iv-trm"/>
+                                                                <constraint firstAttribute="width" constant="100" id="WeD-oL-NWA"/>
+                                                                <constraint firstAttribute="height" constant="100" id="gVz-aF-sOI"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RC-6T-Xo4">
-                                                            <rect key="frame" x="8" y="87" width="36.5" height="25"/>
-                                                            <fontDescription key="fontDescription" name="Hack-Regular" family="Hack" pointSize="10"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gg6-3T-Kqe">
-                                                            <rect key="frame" x="104" y="8" width="247" height="25"/>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Title" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WRn-qh-KUC">
+                                                            <rect key="frame" x="125" y="8" width="222" height="80"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="25" id="1p6-Wb-OiL"/>
+                                                                <constraint firstAttribute="height" constant="80" id="RYr-g6-TVI"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="Hack-Bold" family="Hack" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" name="Hack-Bold" family="Hack" pointSize="20"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2RC-6T-Xo4">
+                                                            <rect key="frame" x="125" y="93" width="222" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Hack-Regular" family="Hack" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstItem="rSB-mO-J2K" firstAttribute="leading" secondItem="Sku-VV-aEf" secondAttribute="leading" constant="8" id="17E-J8-HWx"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Gg6-3T-Kqe" secondAttribute="trailing" constant="8" id="4qb-j1-SzY"/>
-                                                        <constraint firstAttribute="bottom" secondItem="2RC-6T-Xo4" secondAttribute="bottom" constant="4" id="AUu-Zy-HjW"/>
-                                                        <constraint firstItem="2RC-6T-Xo4" firstAttribute="leading" secondItem="Sku-VV-aEf" secondAttribute="leading" constant="8" id="Aop-jJ-UeB"/>
-                                                        <constraint firstItem="Gg6-3T-Kqe" firstAttribute="leading" secondItem="rSB-mO-J2K" secondAttribute="trailing" constant="21" id="MFp-IS-J2c"/>
-                                                        <constraint firstItem="Gg6-3T-Kqe" firstAttribute="top" secondItem="Sku-VV-aEf" secondAttribute="top" constant="8" id="QiQ-xN-joF"/>
-                                                        <constraint firstItem="2RC-6T-Xo4" firstAttribute="top" secondItem="rSB-mO-J2K" secondAttribute="bottom" constant="4" id="VaM-Tx-Hg8"/>
-                                                        <constraint firstItem="rSB-mO-J2K" firstAttribute="top" secondItem="Sku-VV-aEf" secondAttribute="top" constant="8" id="zap-ht-6Qg"/>
+                                                        <constraint firstAttribute="trailing" secondItem="2RC-6T-Xo4" secondAttribute="trailing" constant="12" id="MK6-i7-Z2l"/>
+                                                        <constraint firstItem="WRn-qh-KUC" firstAttribute="leading" secondItem="rSB-mO-J2K" secondAttribute="trailing" constant="17" id="PAy-gr-k1z"/>
+                                                        <constraint firstItem="2RC-6T-Xo4" firstAttribute="top" secondItem="WRn-qh-KUC" secondAttribute="bottom" constant="5" id="Qqx-h9-lyD"/>
+                                                        <constraint firstItem="rSB-mO-J2K" firstAttribute="top" secondItem="Sku-VV-aEf" secondAttribute="top" constant="8" id="Ray-v2-adu"/>
+                                                        <constraint firstItem="WRn-qh-KUC" firstAttribute="top" secondItem="Sku-VV-aEf" secondAttribute="top" constant="8" id="Tar-aU-iDk"/>
+                                                        <constraint firstItem="rSB-mO-J2K" firstAttribute="leading" secondItem="Sku-VV-aEf" secondAttribute="leading" constant="8" id="WcW-HX-4a3"/>
+                                                        <constraint firstAttribute="bottom" secondItem="2RC-6T-Xo4" secondAttribute="bottom" constant="3.5" id="Zoa-PH-NcY"/>
+                                                        <constraint firstItem="2RC-6T-Xo4" firstAttribute="leading" secondItem="rSB-mO-J2K" secondAttribute="trailing" constant="17" id="uiu-7c-P1P"/>
+                                                        <constraint firstAttribute="trailing" secondItem="WRn-qh-KUC" secondAttribute="trailing" constant="12" id="yq6-ah-xiJ"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -82,11 +83,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="Sku-VV-aEf" secondAttribute="trailing" constant="8" id="ydl-oi-Wgb"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.17177799344062805" green="0.19579684734344482" blue="0.21665343642234802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.17254901960784313" green="0.19579684734344482" blue="0.21665343642234802" alpha="0.65000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <outlet property="authorLabel" destination="2RC-6T-Xo4" id="qdA-xg-wdm"/>
+                                            <outlet property="authorLabel" destination="2RC-6T-Xo4" id="Jls-Pp-DYg"/>
                                             <outlet property="avatarImageView" destination="rSB-mO-J2K" id="hhA-1o-p5v"/>
-                                            <outlet property="pullTitleLabel" destination="Gg6-3T-Kqe" id="fAv-qk-c6e"/>
+                                            <outlet property="pullTextView" destination="WRn-qh-KUC" id="TzK-SO-bVC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -118,6 +119,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cFS-9T-drn">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

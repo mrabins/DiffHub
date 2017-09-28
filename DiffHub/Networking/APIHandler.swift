@@ -37,7 +37,7 @@ class APIHandler {
                                 let userAvatar = userOBJ!["avatar_url"]
                                 let userName = userOBJ!["login"]
                                 
-                                pullResult.append(Pull(avatarImage: userAvatar as! String, author: userName as! String, pullTitle: title as! String, diffUrl: diffURL as! String))                                
+                                pullResult.append(Pull(avatarImage: userAvatar as! String, author: userName as! String, pullTitle: title as! String, diffUrl: diffURL as! String))
                             }
                             success(pullResult)
                         } else {

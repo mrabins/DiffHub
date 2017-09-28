@@ -14,6 +14,13 @@ class PullCell: UITableViewCell {
     //MARK: IBOutlets
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var authorLabel: UILabel!
-    @IBOutlet weak var pullTitleLabel: UILabel!
+    @IBOutlet weak var pullTextView: UITextView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        self.layoutIfNeeded()
+        self.avatarImageView.layer.cornerRadius = 12.0
+        self.avatarImageView.clipsToBounds = true
+    }
 }
