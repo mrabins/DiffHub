@@ -120,8 +120,23 @@
                     <view key="view" contentMode="scaleToFill" id="ouV-7i-FPr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oee-XP-wqg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="oee-XP-wqg" firstAttribute="leading" secondItem="OW8-Fg-0eQ" secondAttribute="leading" id="K0P-8Y-t9H"/>
+                            <constraint firstItem="oee-XP-wqg" firstAttribute="top" secondItem="OW8-Fg-0eQ" secondAttribute="top" id="R9A-Ru-N5b"/>
+                            <constraint firstItem="OW8-Fg-0eQ" firstAttribute="bottom" secondItem="oee-XP-wqg" secondAttribute="bottom" id="aE2-5Y-2CH"/>
+                            <constraint firstItem="OW8-Fg-0eQ" firstAttribute="trailing" secondItem="oee-XP-wqg" secondAttribute="trailing" id="gG4-QX-1tx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="OW8-Fg-0eQ"/>
                     </view>
+                    <connections>
+                        <outlet property="diffTableView" destination="oee-XP-wqg" id="DMb-Gp-qWv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsu-MW-4p5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

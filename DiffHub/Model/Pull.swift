@@ -21,7 +21,3 @@ struct Pull {
         self.diffUrl = diffUrl
     }
 }
-
-
-
-

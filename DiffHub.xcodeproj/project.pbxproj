@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1304254A1F7E168A001E56B1 /* FileParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130425491F7E168A001E56B1 /* FileParser.swift */; };
+		1304254C1F7E1766001E56B1 /* DifferentCodeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1304254B1F7E1766001E56B1 /* DifferentCodeLine.swift */; };
+		1304254E1F7E181F001E56B1 /* DifferentCodeBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1304254D1F7E181F001E56B1 /* DifferentCodeBlock.swift */; };
+		130425531F7E1E84001E56B1 /* DiffFileProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130425521F7E1E84001E56B1 /* DiffFileProperties.swift */; };
+		130425561F7E1F17001E56B1 /* TableViewCellSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130425551F7E1F17001E56B1 /* TableViewCellSectionHeader.swift */; };
+		130425591F7E2112001E56B1 /* CodeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130425581F7E2112001E56B1 /* CodeLineTableViewCell.swift */; };
+		1304255B1F7E21CF001E56B1 /* GithubUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1304255A1F7E21CF001E56B1 /* GithubUIColor.swift */; };
+		1304255D1F7ED48C001E56B1 /* DiffPull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1304255C1F7ED48C001E56B1 /* DiffPull.swift */; };
+		1304255F1F7EF9CC001E56B1 /* DiffFileTableViewHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1304255E1F7EF9CC001E56B1 /* DiffFileTableViewHeaderViewCell.swift */; };
+		130425651F809B2A001E56B1 /* PullFileTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130425641F809B2A001E56B1 /* PullFileTableViewHeaderView.swift */; };
 		133C121C1F79D73F00A76BF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C121B1F79D73F00A76BF5 /* AppDelegate.swift */; };
 		133C121E1F79D73F00A76BF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C121D1F79D73F00A76BF5 /* ViewController.swift */; };
 		133C12211F79D73F00A76BF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 133C121F1F79D73F00A76BF5 /* Main.storyboard */; };
@@ -15,12 +25,25 @@
 		133C12361F7AE91300A76BF5 /* PullCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C12351F7AE91300A76BF5 /* PullCell.swift */; };
 		133C12381F7AEADB00A76BF5 /* Pull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C12371F7AEADB00A76BF5 /* Pull.swift */; };
 		133C123D1F7AED5400A76BF5 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C123C1F7AED5400A76BF5 /* APIHandler.swift */; };
-		133C123F1F7AEE0000A76BF5 /* RequestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C123E1F7AEE0000A76BF5 /* RequestConstants.swift */; };
+		133C123F1F7AEE0000A76BF5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133C123E1F7AEE0000A76BF5 /* Constants.swift */; };
 		13706C141F7D7CAE00C9BD75 /* ImageView+APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13706C131F7D7CAE00C9BD75 /* ImageView+APIRequest.swift */; };
 		13706C161F7DA5EC00C9BD75 /* DiffVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13706C151F7DA5EC00C9BD75 /* DiffVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		130425491F7E168A001E56B1 /* FileParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileParser.swift; sourceTree = "<group>"; };
+		1304254B1F7E1766001E56B1 /* DifferentCodeLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentCodeLine.swift; sourceTree = "<group>"; };
+		1304254D1F7E181F001E56B1 /* DifferentCodeBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentCodeBlock.swift; sourceTree = "<group>"; };
+		130425521F7E1E84001E56B1 /* DiffFileProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffFileProperties.swift; sourceTree = "<group>"; };
+		130425541F7E1F10001E56B1 /* DiffFileTableViewHeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiffFileTableViewHeaderViewCell.xib; sourceTree = "<group>"; };
+		130425551F7E1F17001E56B1 /* TableViewCellSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellSectionHeader.swift; sourceTree = "<group>"; };
+		130425571F7E20F0001E56B1 /* CodeLineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CodeLineTableViewCell.xib; sourceTree = "<group>"; };
+		130425581F7E2112001E56B1 /* CodeLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeLineTableViewCell.swift; sourceTree = "<group>"; };
+		1304255A1F7E21CF001E56B1 /* GithubUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUIColor.swift; sourceTree = "<group>"; };
+		1304255C1F7ED48C001E56B1 /* DiffPull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffPull.swift; sourceTree = "<group>"; };
+		1304255E1F7EF9CC001E56B1 /* DiffFileTableViewHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffFileTableViewHeaderViewCell.swift; sourceTree = "<group>"; };
+		130425631F809B00001E56B1 /* PullFileTableViewHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullFileTableViewHeaderView.xib; sourceTree = "<group>"; };
+		130425641F809B2A001E56B1 /* PullFileTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullFileTableViewHeaderView.swift; sourceTree = "<group>"; };
 		133C12181F79D73F00A76BF5 /* DiffHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		133C121B1F79D73F00A76BF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		133C121D1F79D73F00A76BF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +58,7 @@
 		133C12351F7AE91300A76BF5 /* PullCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullCell.swift; sourceTree = "<group>"; };
 		133C12371F7AEADB00A76BF5 /* Pull.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pull.swift; sourceTree = "<group>"; };
 		133C123C1F7AED5400A76BF5 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
-		133C123E1F7AEE0000A76BF5 /* RequestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConstants.swift; sourceTree = "<group>"; };
+		133C123E1F7AEE0000A76BF5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		13706C131F7D7CAE00C9BD75 /* ImageView+APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+APIRequest.swift"; sourceTree = "<group>"; };
 		13706C151F7DA5EC00C9BD75 /* DiffVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,9 +116,17 @@
 		133C122E1F79D9DB00A76BF5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				130425631F809B00001E56B1 /* PullFileTableViewHeaderView.xib */,
 				133C121F1F79D73F00A76BF5 /* Main.storyboard */,
+				130425541F7E1F10001E56B1 /* DiffFileTableViewHeaderViewCell.xib */,
+				130425571F7E20F0001E56B1 /* CodeLineTableViewCell.xib */,
+				130425551F7E1F17001E56B1 /* TableViewCellSectionHeader.swift */,
 				133C12241F79D73F00A76BF5 /* LaunchScreen.storyboard */,
 				133C12351F7AE91300A76BF5 /* PullCell.swift */,
+				130425581F7E2112001E56B1 /* CodeLineTableViewCell.swift */,
+				1304255A1F7E21CF001E56B1 /* GithubUIColor.swift */,
+				1304255E1F7EF9CC001E56B1 /* DiffFileTableViewHeaderViewCell.swift */,
+				130425641F809B2A001E56B1 /* PullFileTableViewHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -104,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				133C12371F7AEADB00A76BF5 /* Pull.swift */,
+				1304255C1F7ED48C001E56B1 /* DiffPull.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,6 +148,10 @@
 				133C12311F79DE1200A76BF5 /* Hack-BoldItalic.ttf */,
 				133C12331F79DE1300A76BF5 /* Hack-Italic.ttf */,
 				133C12341F79DE1300A76BF5 /* Hack-Regular.ttf */,
+				130425491F7E168A001E56B1 /* FileParser.swift */,
+				1304254B1F7E1766001E56B1 /* DifferentCodeLine.swift */,
+				1304254D1F7E181F001E56B1 /* DifferentCodeBlock.swift */,
+				130425521F7E1E84001E56B1 /* DiffFileProperties.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -124,7 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				133C123C1F7AED5400A76BF5 /* APIHandler.swift */,
-				133C123E1F7AEE0000A76BF5 /* RequestConstants.swift */,
+				133C123E1F7AEE0000A76BF5 /* Constants.swift */,
 				13706C131F7D7CAE00C9BD75 /* ImageView+APIRequest.swift */,
 			);
 			path = Networking;
@@ -202,13 +238,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				130425561F7E1F17001E56B1 /* TableViewCellSectionHeader.swift in Sources */,
 				133C12381F7AEADB00A76BF5 /* Pull.swift in Sources */,
 				13706C161F7DA5EC00C9BD75 /* DiffVC.swift in Sources */,
+				1304254C1F7E1766001E56B1 /* DifferentCodeLine.swift in Sources */,
+				130425651F809B2A001E56B1 /* PullFileTableViewHeaderView.swift in Sources */,
 				133C121E1F79D73F00A76BF5 /* ViewController.swift in Sources */,
+				1304255F1F7EF9CC001E56B1 /* DiffFileTableViewHeaderViewCell.swift in Sources */,
 				133C123D1F7AED5400A76BF5 /* APIHandler.swift in Sources */,
+				130425591F7E2112001E56B1 /* CodeLineTableViewCell.swift in Sources */,
+				1304254A1F7E168A001E56B1 /* FileParser.swift in Sources */,
+				1304255D1F7ED48C001E56B1 /* DiffPull.swift in Sources */,
+				1304254E1F7E181F001E56B1 /* DifferentCodeBlock.swift in Sources */,
+				130425531F7E1E84001E56B1 /* DiffFileProperties.swift in Sources */,
 				133C121C1F79D73F00A76BF5 /* AppDelegate.swift in Sources */,
 				133C12361F7AE91300A76BF5 /* PullCell.swift in Sources */,
-				133C123F1F7AEE0000A76BF5 /* RequestConstants.swift in Sources */,
+				133C123F1F7AEE0000A76BF5 /* Constants.swift in Sources */,
+				1304255B1F7E21CF001E56B1 /* GithubUIColor.swift in Sources */,
 				13706C141F7D7CAE00C9BD75 /* ImageView+APIRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

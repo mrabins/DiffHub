@@ -22,7 +22,6 @@ class ViewController: UIViewController {
         pullTableView.dataSource = self
         navigationItem.title = "Pulls"
         
-        
         APIHandler.callAPI({ pulls in
             self.pulls = pulls
             
@@ -46,11 +45,6 @@ class ViewController: UIViewController {
             
         }
     }
-    
-    override func didMove(toParentViewController parent: UIViewController?) {
-        // Return to portait if that was previous state
-    }
-    
 }
 
 //MARK: TableViewDelegate & TableViewDataSource Extension
@@ -77,6 +71,7 @@ extension ViewController: UITableViewDelegate {
         
         let indexPath = pullTableView.indexPathForSelectedRow
         let thePull = pulls[(indexPath?.row)!]
+        APIHandler.diffRequest(diffURL: thePull.diffUrl!)
         
         performSegue(withIdentifier: "segueToDiff", sender: thePull)
         
